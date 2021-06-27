@@ -1,0 +1,24 @@
+.spoty__container{
+	margin: 0 0 2rem 0;
+	width: 100%;
+}
+.cards__container{
+	@include tablet{
+		@include grid(3, 2rem);
+	}
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	background-color: $light-blue;
+	padding: 2rem;
+	border-radius: 25px;
+	margin-bottom: 3rem;
+	
+}
+.card__img{
+	margin-bottom: 2rem;
+}
+.btns{
+	margin-bottom: 2rem;
+}

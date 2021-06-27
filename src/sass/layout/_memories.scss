@@ -1,0 +1,24 @@
+.memories{
+	span{
+		color: $dark-blue;
+	}
+}
+.memorie{
+	
+	@include tablet{
+		@include grid(2, $separation);
+	}
+	.captura{
+		max-height: 60rem;
+		margin-left: 7rem;
+		@include tablet{
+			margin:  0;
+		}
+	}
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid $gray;
+	&:last-of-type{
+		border: none;
+	}
+}

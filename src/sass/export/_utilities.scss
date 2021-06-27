@@ -1,0 +1,27 @@
+.text-center {
+    text-align: center;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background-color: $purple;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: $regular;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $purple-hover;
+    }
+}
+.btn-small{
+    width: 20rem;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
