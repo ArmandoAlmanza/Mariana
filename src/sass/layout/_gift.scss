@@ -1,0 +1,71 @@
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+	content: '';
+}
+.swiper-portfolio-icon{
+	font-size: 4rem;
+	color: $black;
+}
+.swiper-button-prev{
+	left: -2rem;
+}
+.swiper-pagination-bullet{
+	body.dark-theme & {
+		background-color: #fff;
+	}
+}
+.swiper-button-next{
+	right: -2rem;
+	@include tablet{
+		right: -5rem;
+	}
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+	bottom: -3rem;
+}
+.swiper-pagination-bullet-active{
+	background-color: $blue;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+	outline: none;
+}
+.gift{
+	p{
+		line-height: 2;
+	}
+}
+
+.gift__container{
+	overflow: initial;
+}
+
+.gift__content{
+	padding: 0 1.5rem;
+	@include tablet{
+		@include grid(2, $separation / 2);
+	}
+}
+.gift__img{
+	width: 600px;
+	border-radius: .5rem;
+	justify-self: center;
+}
+.gift__title{
+	font-size: 2rem;
+	margin-bottom: .5rem;
+}
+.gift__description{
+	margin-bottom: .75rem;
+}
+
+.gift__btn{
+	display: inline-flex;
+	align-items: center;
+	padding: .75rem 1rem;
+	&:hover .btn__icon{
+		transform: translateX(.25rem);
+	}
+}

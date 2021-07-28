@@ -1,27 +1,44 @@
 .text-center {
     text-align: center;
 }
-.btn{
-    border: none;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    background-color: $purple;
-    color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    font-weight: $regular;
-    transition: .3s all ease-in-out;
-    &:hover{
-        background-color: $purple-hover;
-    }
-}
-.btn-small{
-    width: 20rem;
-}
+
 .d-none{
     display: none;
 }
 .d-block{
     display: block;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.btn{
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: $purple-alt;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: $regular;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: $purple;
+    }
+}
+.btn__icon{
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    transition: .3s;
+}
+.btn__memorie{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
+.data{
+	text-align: center;
+	margin-top: 5rem;
 }

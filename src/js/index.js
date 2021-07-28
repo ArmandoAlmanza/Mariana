@@ -3,51 +3,44 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const App = () => {
-    scrollNav();
-    navblock();
+    swipperPort();
+    scrollUp();
 
-    show();
+    memoriesScroll();
 };
 
-const scrollNav = () => {
-    const links = document.querySelectorAll(".navbar a");
-    links.forEach(function (link) {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const section = document.querySelector(
-                e.target.attributes.href.value
-            );
-            section.scrollIntoView({
-                behavior: "smooth",
-            });
+const swipperPort = () => {
+    let swiper = new Swiper(".gift__container", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+};
+
+const scrollUp = () => {
+    function scrollU() {
+        const scrollU = document.getElementById("scroll-up");
+        // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+        if (this.scrollY >= 560) scrollU.classList.add("show-scroll");
+        else scrollU.classList.remove("show-scroll");
+    }
+    window.addEventListener("scroll", scrollU);
+};
+
+const memoriesScroll = () => {
+    document.querySelectorAll("#recuerdos .list a").forEach((link) => {
+        link.addEventListener("click", () => {
+            document
+                .querySelector("#recuerdos .active")
+                .classList.remove("active");
+            link.parentElement.classList.add('active');
         });
     });
 };
-
-const navblock = () => {
-    const navbar = document.querySelector(".header");
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            navbar.classList.remove("block");
-        } else {
-            navbar.classList.add("block");
-        }
-    });
-    // Elemento a observar
-    observer.observe(document.querySelector(".thx"));
-};
-
-const show = () =>{
-    const spoty = document.getElementById('reproductor');
-    const btn = document.getElementById('btn');
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if(spoty.classList.contains('d-block')){
-            spoty.classList.remove('d-block');
-            spoty.classList.add('d-none');
-        } else {
-            spoty.classList.add('d-block');
-            spoty.classList.remove('d-none');
-        }
-    })
-}

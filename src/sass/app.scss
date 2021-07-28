@@ -1,6 +1,6 @@
 // Normalize & google fonts
 @import './export/normalize';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@600;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400&display=swap');
 // Globals
 @import './export/variables';
 @import './export/mixins';
@@ -8,8 +8,8 @@
 @import './export/utilities';
 //Layout
 @import './layout/header';
-@import './layout/thx';
-@import './layout/cards';
-@import './layout/memories';
-@import './layout/despedida';
+@import './layout/gift';
+@import './layout/thanks';
+@import './layout/memorie';
 @import './layout/footer';
+@import './layout/scrollBar';

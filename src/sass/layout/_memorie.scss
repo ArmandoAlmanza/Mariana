@@ -1,0 +1,79 @@
+.memorie {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    img {
+        height: auto;
+    }
+    @include tablet {
+        flex-direction: row;
+    }
+}
+.memorie__text {
+    background-color: $black;
+    color: $light-gray;
+    padding: 3rem;
+    h2 {
+        text-align: center;
+    }
+    p {
+        line-height: 1.5;
+    }
+}
+.memories__container {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 20% auto;
+    }
+}
+aside {
+    padding: 0 1.5rem;
+}
+.memories__btns {
+    padding-top: 2rem;
+	position: sticky;
+	top: 0;
+    a {
+        font-size: 2rem;
+    }
+}
+.list {
+    border-left: 2px solid #c9c9c9;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+    li {
+        position: relative;
+        &:hover::before {
+            border: 2px solid $blue;
+            transition: all 0.3s ease-in-out;
+        }
+        &.active::before {
+            background-color: $light-blue;
+            border: 2px solid $blue;
+        }
+        &::before {
+            content: "";
+            display: block;
+            height: 1.6rem;
+            width: 1.6rem;
+            background-color: #f2f2f2;
+            border: 2px solid $gray;
+            position: absolute;
+            left: -19px;
+            top: calc(50% - 12px);
+            transform: rotate(45deg);
+        }
+        a {
+            display: block;
+            color: $black;
+            padding: 1.5rem 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.list li.active a,
+.list li a:hover {
+    color: $purple;
+}

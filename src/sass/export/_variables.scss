@@ -1,23 +1,23 @@
 $titles:  'Poppins', sans-serif; // for titles
-$normal: 'Roboto', sans-serif; //for text
-$second-normal: 'Playfair Display', serif; //just in case
+$normal:  'Amita', cursive;
 
 // Colors
-$white: #F4F9F9;
-$light-blue: #CCF2F4;
-$blue: #A4EBF3;
-$dark-blue: #39A2DB;
-$gray: #AAAAAA;
-$black: #132C33;
-$purple: #C490E4;
-$purple-hover: #AC66CC;
+$black: #000;
+$white: #fff;
+$gray: #c4c4c4;
+$light-gray: #f1f1f1;
+$blue: #67B4FB;
+$light-blue: #A2DBFA;
+
+$purple: #B980F0;
+$purple-alt: #AC66CC;
 //Fonts
+$light: 300;
 $regular: 400;
 $medium: 600;
-$bold: 700;
 //Seperations
 $separation: 5rem;
 // Queries
-$phone: 480px;
+$phone: 520px;
 $tablet: 768px;
 $desktop: 1024px;

@@ -4,271 +4,354 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Icon -->
-        <link rel="icon" href="./build/img/favicon.png" type="image/png" />
-        <!-- Styles -->
+        <!-- icons -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+        <!-- Swipper -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <!-- Css -->
         <link rel="stylesheet" href="./build/css/app.css" />
-        <title>Marianita</title>
+        <title>Mariana</title>
     </head>
     <body>
-        <header class="header">
-            <div class="container header-content">
-                <h1>Mariana</h1>
-                <nav class="navbar">
-                    <a href="#spoty">Playtlist</a>
-                    <a href="#explain">Explicación</a>
-                    <a href="#gift">Regalo</a>
-                    <a href="#memories">Recuerdos</a>
-                </nav>
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="hero">
+                <div class="header__content">
+                    <div class="header__nav">
+                        <nav class="navbar">
+                            <a href="#header">Inicio</a>
+                            <a href="#gift">Regalos</a>
+                            <a href="#memories">Recuerdos</a>
+                        </nav>
+                        <h2>Mariana</h2>
+                    </div>
+                    <div class="header__text">
+                        <h1>Felices 6 meses</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Donec vehicula accumsan urna, a facilisis dui
+                            vehicula ac. Integer gravida venenatis quam, eu
+                            dictum urna tincidunt in. Sed lorem diam, consequat
+                            sit amet mi et, vehicula tincidunt massa. Duis
+                            tempus, risus ut fringilla laoreet, erat elit
+                            aliquam velit, et viverra sem dolor nec arcu.
+                            Maecenas leo nulla, tempus sed lacus egestas,
+                            tristique pulvinar ex. Praesent finibus tincidunt
+                            nulla. Nullam sed lectus congue nulla imperdiet
+                            lacinia. Praesent tincidunt sem metus, eu ultricies
+                            tortor luctus sed. Fusce lobortis pharetra lorem in
+                            interdum. Nullam sed velit nec sem interdum mattis
+                            eu vel mi.
+                        </p>
+                        <p>
+                            Sed eu facilisis odio, semper aliquam libero.
+                            Aliquam orci erat, accumsan sit amet urna in,
+                            volutpat cursus mi. Nam imperdiet fermentum
+                            tincidunt. Etiam accumsan sagittis augue, eu
+                            placerat tellus suscipit vitae. Aliquam convallis
+                            gravida nunc, quis eleifend nisi luctus in.
+                            Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Duis
+                            semper faucibus nisi in pretium. Curabitur tincidunt
+                            volutpat tristique. Praesent consequat sed risus
+                            vitae volutpat. Cras tincidunt, ante at mattis
+                            porttitor, orci dolor posuere dolor, eget tempor
+                            odio felis in leo. Proin vestibulum semper felis ut
+                            pellentesque.
+                        </p>
+                    </div>
+                </div>
             </div>
         </header>
-        <!-- Agradecimiento -->
-        <section class="container thx">
-            <h3>Gracias por todo</h3>
-            <div class="thx__content">
-                <div class="thx-img__container">
-                    <img src="./build/img/thx.webp" alt="us image" />
-                </div>
-                <div class="thx-text__container">
-                    <p>
-                        Wow, realmente me has aguantado 6 meses? JAJAJAJA mis
-                        respetos.
-                    </p>
-                    <p>
-                        Espero te guste este pequeño regalo que te hice, esta
-                        pequeña es por asi decirlo el nexo de todo (aqui se
-                        conecta todo) y pues se divide en 3 cosas que veras a
-                        continuación. Espero te guste nena, lo hice con todo mi
-                        amor.
-                    </p>
-                    <p>
-                        Btw, si puedes ver todo en tu compu estaria chido aunque
-                        si lo ves en el telefono aún podras disfrutar de todo.
-                        (solo cambia una cosa pero meh)
-                    </p>
-                    <p>P.D. te quiero mucho y enserio gracias por todo.</p>
-                </div>
+        <!-- Gifts -->
+        <main class="container gift" id="gift">
+            <div class="data">
+                <h1>Regalós</h1>
+                <p>
+                    Te hice 3 regalos, uno lo estas viendo y los otros 2 estan
+                    aquí.
+                </p>
+                <p>Espero te gusten :3</p>
             </div>
-        </section>
-        <!-- Cards -->
-        <main class="container">
-            <div class="cards__container">
-                <!-- Card 1 -->
-                <div class="card" id="spoty">
-                    <div class="card__img">
-                        <img src="./build/img/code.jpeg" alt="code image" />
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card-title">Playlist</h3>
-                        <p>
-                            Esta es una pequeña playlist que hice con varias (al
-                            final fueron bastantes xd) canciones que me
-                            recuerdan a ti de alguna manera y pues aqui estan.
-                            espero te gusten nena, LY.
-                        </p>
-                        <p>
-                            Btw, si escaneas el codigo igual te manda a la
-                            playlist. Aún así pues le puedes dar al boton y
-                            listo pero lo puse por si querias jajaja
-                        </p>
-                    </div>
 
-                    <button type="button" class="btn" id="btn">Show Me</button>
-                    <br />
-                    <div class="spoty__container d-none" id="reproductor">
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/5keSW8PPWT9aymwZPwwGDK?theme=0"
-                            width="100%"
-                            height="80"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
+            <div class="gift__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- regalo 1 -->
+                    <div class="gift__content grid swiper-slide">
+                        <img
+                            src="./build/img/playlist.jpg"
+                            alt="playlist image"
+                            class="gift__img"
+                        />
+
+                        <div class="gift__text">
+                            <h3 class="gift__title">Playlist</h3>
+                            <p class="gift__description">
+                                Esta es una pequeña playlist que hice con varias
+                                (al final fueron bastantes xd) canciones que me
+                                recuerdan a ti de alguna manera y pues aqui
+                                estan. espero te gusten nena, LY. Se me hizo muy
+                                bonita la casualidad de que varias canciones que
+                                puse en la playlist coinsidieran con canciones
+                                que ya te gustaban o algo jajaja, no se se me
+                                hizo muy bonito eso .
+                            </p>
+                            <a
+                                href="https://open.spotify.com/playlist/5keSW8PPWT9aymwZPwwGDK?si=7f1d993605a64811"
+                                target="_blank"
+                                class="btn gift__btn"
+                            >
+                                Listen!
+                                <i class="uil uil-arrow-right btn__icon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <a
-                        href="https://open.spotify.com/playlist/5keSW8PPWT9aymwZPwwGDK?si=889950da263f410b"
-                        target="_blank"
-                        class="btn"
-                        >Click me</a
-                    >
+                    <!-- regalo 2 Explciación -->
+                    <div class="gift__content grid swiper-slide">
+                        <img
+                            src="./build/img/explain.jpg"
+                            alt="playlist image"
+                            class="gift__img"
+                        />
+
+                        <div class="gift__text">
+                            <h3 class="gift__title">Explicación</h3>
+                            <p class="gift__description">
+                                A tu novio le gustan canciones raras y piensa en
+                                ti bastante soooo, aquí esta un documento que te
+                                explica varias canciones que estan en japones o
+                                son bandas sonoras
+                            </p>
+                            <a
+                                href="https://docs.google.com/document/d/1m8v-NA1OpA5-u3Hfj21YOiNmgz5QnpME1cxhzVE5aJg/edit?usp=sharing"
+                                target="_blank"
+                                class="btn gift__btn"
+                            >
+                                Click me!
+                                <i class="uil uil-arrow-right btn__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- regalo 3 Presentación -->
+                    <div class="gift__content swiper-slide">
+                        <img
+                            src="./build/img/gift.jpg"
+                            alt="playlist image"
+                            class="gift__img"
+                        />
+
+                        <div class="gift__text">
+                            <h3 class="gift__title">Regalo final!</h3>
+                            <p class="gift__description">
+                                Así es, otra diapositiva. Perdón si soy muy de
+                                mandarte de estas pero es que es una de las
+                                mejores formas que tengo para expresarme y pues
+                                esta está bonita te lo juro, le puse cariño uwu.
+                            </p>
+                            <p>Espeor te guste nena. Te quiesito</p>
+                            <a
+                                href="./build/documents/6_meses.pptx"
+                                class="btn gift__btn"
+                            >
+                                Download!
+                                <i class="uil uil-arrow-right btn__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of portfolios -->
                 </div>
-                <!-- Card 2 -->
-                <div class="card" id="explain">
-                    <div class="card__img">
-                        <img src="./build/img/explain.webp" alt="code image" />
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card-title">Explicación</h3>
-                        <p>
-                            Hay canciones algo "raras" lo pongo entre comillas
-                            porque son bandas sonoras o canciones en japones que
-                            pues intuyo no entiendes jajaja
-                        </p>
-                        <p>
-                            Entonces decidi hacer esto para pues ayudarte a
-                            entender porque me recuerdan a ti ya sea poniendo el
-                            enlace a la letra en español o explicando el porque
-                            esa banda sonora me recuerda a ti xd
-                        </p>
-                    </div>
-                    <a
-                        href="https://docs.google.com/document/d/1m8v-NA1OpA5-u3Hfj21YOiNmgz5QnpME1cxhzVE5aJg/edit?usp=sharing"
-                        target="_blank"
-                        class="btn"
-                        >Click me</a
-                    >
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
-                <!-- Card 3 -->
-                <div class="card" id="gift">
-                    <div class="card__img">
-                        <img src="./build/img/amorts.webp" alt="code image" />
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card-title">Regalo</h3>
-                        <p>
-                            Mira esto es la se podria decir ultima parte de tu
-                            regalo, es algo que ya le cariño hacer (como te he
-                            dicho nunca lo habia hecho antes jajaja) y pense en
-                            hacerte esto en plan bonito.
-                        </p>
-                        <p>
-                            En fin mejor te dejo que la veas y disfrutes mucho,
-                            advierto que en algunas partes habrá mucho texto y
-                            pido perdón pero era necesario.
-                        </p>
-                    </div>
-                    <a href="./build/documents/6_meses.pptx" class="btn"
-                        >Click me</a
-                    >
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-                <!-- End of cards -->
+                <div class="swiper-pagination"></div>
             </div>
         </main>
         <!-- Memories -->
-        <section class="container memories" id="memories">
-            <h3>Recuerdos</h3>
-            <div class="memories__content">
-                <!-- Memorie 1 -->
-                <div class="memorie">
-                    <div class="memorie__text">
-                        <p>
-                            Dios tengo muchos recuerdos hermoso contigo, digo
-                            contigo he hecho muchas cosas que nunca habia hecho
-                            que pues las atesoro bastante. Como te dije nunca
-                            habia sido de hacer llamadas o videollamadas y
-                            contigo es como de
-                            <span
-                                >"siento que no soy bueno en esto pero aún así
-                                lo sigues haciendo y eso es hermoso"</span
-                            >
-                            y enserio atesoro todas las videollamdas que hemos
-                            tenido (prueba de esto es la foto uwu) y eso que no
-                            me gusta como salgo, me veo raro jajajaj. Pero tu
-                            siempre te ves hermosa mi vida
-                        </p>
+        <section class="memories container" id="memories">
+            <div class="data">
+                <h1>Memories</h1>
+                <p>
+                    Aquí pondre algunos recuerdos contigo que valoro demasiado
+                </p>
+            </div>
+            <div class="memories__container">
+                <aside>
+                    <div class="memories__btns" id="recuerdos">
+                        <h3>Recuerdos</h3>
+                        <ul class="list">
+                            <li class="active">
+                                <a href="#1">1. First met</a>
+                            </li>
+                            <li><a href="#2">2. Cumpleaños</a></li>
+                            <li><a href="#3">3. LLamadas</a></li>
+                            <li><a href="#4">4. Torneo</a></li>
+                        </ul>
                     </div>
-                    <img
-                        src="./build/img/prueba.webp"
-                        alt="prueba con captura"
-                        class="captura"
-                    />
-                </div>
-                <!-- Memorie 2 -->
-                <div class="memorie">
-                    <img src="./build/img/recuerdo_2.webp" alt="Recuerdo 2" />
-                    <div class="memorie__text">
-                        <p>
-                            Joder como olvidar la primera vez que te vi, desde
-                            que te dije
-                            <span
-                                >"oye, tienes planes? te gustaria tenerlos 😶"
-                                hasta el viernes que te fui a ver me estaba
-                                mueriendo de nervios JAJAJAJ</span
-                            >
-                        </p>
-                        <p>
-                            Recuerdo que estaba temeroso porque soy alguien
-                            inseguro por como se ve y se que es una tonteria
-                            pero tenia pena o no se. Pero aún así estaba super
-                            emocionado y feliz por verte ya que eras la niña que
-                            alegraba mis tardes y que me hacia disfrutar las
-                            clases
-                        </p>
-                        <p>
-                            Ese día con nuestro primer beso es de los mejores
-                            días de mi vida pero by far. Never forget 19/03/2021
-                        </p>
+                </aside>
+                <div class="recuerdos">
+                    <!-- Memorie 1 -->
+                    <div class="memorie" id="1">
+                        <img src="./build/img/couple.jpg" alt="memorie 1" />
+                        <div class="memorie__text">
+                            <h2>Primera vez que te vi</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Tempus in gravida sagittis,
+                                velit. Placerat sed non bibendum ut sed felis.
+                                Sed a urna, tristique quis faucibus. Dolor nulla
+                                parturient duis sed dui eget varius. Mauris
+                                risus, eu, id dui egestas nunc donec. Pulvinar
+                                magna aliquet risus duis quam. Imperdiet in
+                                lectus sem nisi ut enim velit fusce. Vivamus
+                                congue adipiscing ac, nisi, eu ornare purus urna
+                                integer. Sed non etiam aliquam at dictum posuere
+                                a, odio pellentesque. Pretium cras malesuada
+                                orci consequat. Blandit egestas leo massa odio
+                                vestibulum nulla ante. Vitae aliquam et, pretium
+                                volutpat. Lorem nunc nulla et elit. Dictum
+                                placerat eu a turpis.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <!-- Memorie 3 -->
-                <div class="memorie">
-                    <div class="memorie__text">
-                        <p>
-                            Nuestros cumpleaños son otros de los recuerdos más
-                            bonitos contigo (los primeros de muchos que
-                            estaremos juntos)
-                        </p>
-                        <p>
-                            El día de tu cumpleaños fue un día hermoso en el que
-                            wow, yo nunca habia tenido beso bajo la lluvia así,
-                            digo realmente lo senti distinto lo senti de una
-                            manera que dije
-                            <span
-                                >"wow, no sabia que esto se podia sentir así
-                                de... magico"</span
-                            >, fue realmente especial igual para mí. También el
-                            estar bromeando y platicando debajo del árbol me
-                            encanto fue cuando realmente dije
-                            <span
-                                >"ella no solo es mi novia, so solo la viera así
-                                no podria estar hablando así con ella"</span
-                            >
-                            así es, fue el día en el que me di cuenta que mi
-                            novia era mi mejor amiga y ahi te agarre un cariño
-                            aún mayor ya que nunca lo habia experimentado.
-                        </p>
-                        <p>
-                            Sobre mi cumpleaños que te puedo decir amor...
-                            realmente hiciste que tuviera uno de los pocos
-                            cumpleaños felices en lo que llevo de vida y por eso
-                            te agradezco demasiado.
-                        </p>
+                    <!-- Memorie 2 -->
+                    <div class="memorie" id="2">
+                        <img src="./build/img/couple.jpg" alt="memorie 1" />
+                        <div class="memorie__text">
+                            <h2>Cumpleñaos</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Tempus in gravida sagittis,
+                                velit. Placerat sed non bibendum ut sed felis.
+                                Sed a urna, tristique quis faucibus. Dolor nulla
+                                parturient duis sed dui eget varius. Mauris
+                                risus, eu, id dui egestas nunc donec. Pulvinar
+                                magna aliquet risus duis quam. Imperdiet in
+                                lectus sem nisi ut enim velit fusce. Vivamus
+                                congue adipiscing ac, nisi, eu ornare purus urna
+                                integer. Sed non etiam aliquam at dictum posuere
+                                a, odio pellentesque. Pretium cras malesuada
+                                orci consequat. Blandit egestas leo massa odio
+                                vestibulum nulla ante. Vitae aliquam et, pretium
+                                volutpat. Lorem nunc nulla et elit. Dictum
+                                placerat eu a turpis.
+                            </p>
+                        </div>
                     </div>
-                    <img src="./build/img/beso.webp" alt="prueba con captura" />
+                    <!-- Memorie 3 -->
+                    <div class="memorie" id="3">
+                        <img src="./build/img/couple.jpg" alt="memorie 1" />
+                        <div class="memorie__text">
+                            <h2>LLamadas</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Tempus in gravida sagittis,
+                                velit. Placerat sed non bibendum ut sed felis.
+                                Sed a urna, tristique quis faucibus. Dolor nulla
+                                parturient duis sed dui eget varius. Mauris
+                                risus, eu, id dui egestas nunc donec. Pulvinar
+                                magna aliquet risus duis quam. Imperdiet in
+                                lectus sem nisi ut enim velit fusce. Vivamus
+                                congue adipiscing ac, nisi, eu ornare purus urna
+                                integer. Sed non etiam aliquam at dictum posuere
+                                a, odio pellentesque. Pretium cras malesuada
+                                orci consequat. Blandit egestas leo massa odio
+                                vestibulum nulla ante. Vitae aliquam et, pretium
+                                volutpat. Lorem nunc nulla et elit. Dictum
+                                placerat eu a turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Memorie 4 -->
+                    <div class="memorie" id="4">
+                        <img src="./build/img/couple.jpg" alt="memorie 1" />
+                        <div class="memorie__text">
+                            <h2>Torneo</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Tempus in gravida sagittis,
+                                velit. Placerat sed non bibendum ut sed felis.
+                                Sed a urna, tristique quis faucibus. Dolor nulla
+                                parturient duis sed dui eget varius. Mauris
+                                risus, eu, id dui egestas nunc donec. Pulvinar
+                                magna aliquet risus duis quam. Imperdiet in
+                                lectus sem nisi ut enim velit fusce. Vivamus
+                                congue adipiscing ac, nisi, eu ornare purus urna
+                                integer. Sed non etiam aliquam at dictum posuere
+                                a, odio pellentesque. Pretium cras malesuada
+                                orci consequat. Blandit egestas leo massa odio
+                                vestibulum nulla ante. Vitae aliquam et, pretium
+                                volutpat. Lorem nunc nulla et elit. Dictum
+                                placerat eu a turpis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="despedida container">
-            <h3>Te quiero</h3>
+        <!-- Thanks for all -->
+        <section class="container thanks">
+            <div class="data">
+                <h1>Thanks</h1>
+                <p>Enserio gracias por todo amor</p>
+            </div>
             <p>
-                Esto sera breve ya que no quiero escribir todo aqui, digo por
-                algo hice lo otro jajajaja. Enserio te quiero como no tienes
-                idea mi niña, llegaste a cambiar mi mundo de una manera que ni
-                yo lo esperaba.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Volutpat magna leo, dictum elit ac lacus, non. Consectetur nisi,
+                fusce id urna, sed quis aliquet. Suspendisse amet amet dolor
+                nunc netus egestas malesuada quisque massa. Id augue nulla
+                maecenas luctus sit. Arcu vitae fames tellus leo faucibus sit
+                purus ut elit. Eget placerat ut turpis enim lacus porta lorem
+                sit eget. Cras vestibulum non mi nulla magna tellus id. Egestas
+                malesuada pharetra nibh aliquam adipiscing turpis. Elit, massa
+                diam arcu amet condimentum. Adipiscing in lorem eu accumsan in
+                tortor porta quisque.
             </p>
             <p>
-                Te adoro enserio muñequita hermosa y ya para concluir te dejo
-                esto que es como un <span>bonus</span> de tu regalo así que
-                espero te haya gustado y pues eso, te quiero enserio te quiero
-                mucho
+                Ultricies dolor vestibulum massa in eget. Ultrices vitae
+                placerat urna pharetra egestas amet sapien erat. Tristique
+                dignissim faucibus neque adipiscing diam vel hendrerit. Sed sit
+                venenatis vivamus venenatis malesuada venenatis. A nulla lacus,
+                neque morbi sollicitudin. At pellentesque feugiat ultricies
+                adipiscing donec laoreet netus suspendisse. Tellus consectetur
+                erat pulvinar at.
             </p>
-            <a
-                href="https://cat-bounce.com/"
-                target="_blank"
-                class="btn btn-small"
-                >Random</a
-            >
+            <div class="future__img"></div>
+            <p>
+                Gracias por estos 6 meses a tu lado. ¿Que tal si vamos por
+                muchos más y en algún momento visitamos puebllitos magicos?
+            </p>
         </section>
-
+        <!-- Footer -->
         <footer class="footer">
-            <p>
-                Este es un pequeño regalo para mi chiquita hermosa. Te adoro e
-                iba a perdón por si fui meloso pero se que no tienes problemas
-                soooo, espero te haya gustado este detallito
-            </p>
+            <div class="footer__text">
+                <p>
+                    Este es un pequño regalo para una de las personas más
+                    importantes en mi vida
+                </p>
+                <p>
+                    Te quiero mucho y espero te haya gustado. Te quiere Armando
+                </p>
+            </div>
+            <nav class="navbar">
+                <a href="#header">Inicio</a>
+                <a href="#gift">Regalos</a>
+                <a href="#memories">Recuerdos</a>
+            </nav>
         </footer>
-
-        <script src="build/js/index.js"></script>
+        <!-- Scroll up -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./build/js/index.js"></script>
     </body>
 </html>
