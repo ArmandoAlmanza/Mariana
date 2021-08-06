@@ -39,7 +39,10 @@
 }
 
 .gift__container{
-	overflow: initial;
+	overflow: hidden;
+	@include tablet{
+		overflow: initial;
+	}
 }
 
 .gift__content{
