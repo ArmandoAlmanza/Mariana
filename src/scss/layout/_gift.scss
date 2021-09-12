@@ -1,0 +1,62 @@
+
+.swiper-portfolio-icon {
+    font-size: 4rem;
+    color: $black;
+}
+
+.swiper-pagination-bullet {
+    display: none;
+    body.dark-theme & {
+        background-color: #fff;
+    }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -3rem;
+}
+.swiper-pagination-bullet-active {
+    background-color: $blue;
+}
+.swiper-pagination-bullet {
+    outline: none;
+}
+.gift {
+    p {
+        line-height: 2;
+    }
+}
+
+.gift__container {
+    overflow: hidden;
+    @include tablet {
+        overflow: initial;
+    }
+}
+
+.gift__content {
+    padding: 0 1.5rem;
+    @include tablet {
+        @include grid(2, 2.5rem);
+    }
+}
+.gift__img {
+    width: 600px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+.gift__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.gift__description {
+    margin-bottom: 0.75rem;
+}
+
+.gift__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    &:hover .btn__icon {
+        transform: translateX(0.25rem);
+    }
+}

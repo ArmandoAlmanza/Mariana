@@ -20,6 +20,7 @@ const swipperPort = () => {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            dynamicBullets: true,
         },
     });
 };
@@ -40,7 +41,7 @@ const memoriesScroll = () => {
             document
                 .querySelector("#recuerdos .active")
                 .classList.remove("active");
-            link.parentElement.classList.add('active');
+            link.parentElement.classList.add("active");
         });
     });
 };
