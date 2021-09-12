@@ -20,7 +20,6 @@ const swipperPort = () => {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            dynamicBullets: true,
         },
     });
 };
